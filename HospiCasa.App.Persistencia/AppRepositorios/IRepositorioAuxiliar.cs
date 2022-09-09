@@ -1,4 +1,7 @@
+/*
 using System;
+usitn HospiCasa.App.Dominio;
+
 
 namespace HospiCasa.App.Persistencia
 {
@@ -6,7 +9,7 @@ namespace HospiCasa.App.Persistencia
     {   
 
 // Sprint 2 //        
-        //  Sprint 2 / Agregar paciente HU - 01 
+        // Sprint 2 / Agregar paciente HU - 01 
         public Paciente addPaciente (Paciente paciente);
 
         // Sprint 2 / Adicionar datos medico HU - 02
@@ -31,3 +34,4 @@ namespace HospiCasa.App.Persistencia
          
     }
 }
+*/

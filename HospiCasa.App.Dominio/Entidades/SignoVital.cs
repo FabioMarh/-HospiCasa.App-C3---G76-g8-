@@ -1,3 +1,4 @@
+
 using System;
 
 namespace HospiCasa.App.Dominio
@@ -27,3 +28,4 @@ namespace HospiCasa.App.Dominio
 
     }
 }
+

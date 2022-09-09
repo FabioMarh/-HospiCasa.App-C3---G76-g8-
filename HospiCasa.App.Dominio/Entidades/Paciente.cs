@@ -5,8 +5,8 @@ namespace HospiCasa.App.Dominio
     public class Paciente : Persona
     {
 
-        public int? id {get;set;}
-        public int pacienteid{get;set;}
+        //public int? id {get;set;}
+        public int idPaciente {get;set;}
         public string direccion {get;set;}
         public int direccionGeorreferenciada {get;set;}
         public string ciudad {get;set;}
@@ -17,8 +17,9 @@ namespace HospiCasa.App.Dominio
         //Lo que quiere decir que tal vez funcione así para clase historia y clase paciente... so:  ..
 
         public HistoriaMedica historiaMedica {get;set;}
+        //public int? idPersona {get;set;}    
 
-        //Cruza los dedos por mi .......... Parece que funciono 
+        
         
     }
 }

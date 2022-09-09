@@ -9,23 +9,30 @@ namespace HospiCasa.App.Persistencia
         // No se puede agregar por que causa el error de cascadde paths caminos en cascada... 
             //El conflicto esta en los ids y los flujos entre las tres clases  Persona, Paciente y Familiar. Ahora hay error en plataforma para poder hacer que las tablas reciban datos, los datos de esta erencia con persona no son posibles de llenar y son relevantes en el proceso.... Queda pendiente.......  
              
-                //public DbSet <Persona> Personas {get;set;}
+        //Clase padre 
+            //public DbSet <Persona> Personas {get;set;}
 
-        //Error aca
+        //Clases que Heredan 
         public DbSet <Paciente> Pacientes {get;set;}
         public DbSet <Familiar> Familiares {get;set;}
 
         public DbSet <Auxiliar> Auxiliares {get;set;}
+
         public DbSet <Medico> Medicos {get;set;}
         
         public DbSet <Enfermera> Enfermeros {get;set;}
         
+
+        //clases de relación 
         public DbSet <HistoriaMedica> HistoriasMedicas {get;set;}
         
         public DbSet <SignoVital> SignosVitales {get;set;}
         public DbSet <SugerenciaCuidado> SugerenciasCuidados {get;set;}
+        
+        
+        //Clases enum
         //public DbSet <Genero> Genero {get; set;}
-        //public DbSet <TipoSigno> TipoSigno {get; set;} */
+        //public DbSet <TipoSigno> TipoSigno {get; set;} 
     
   /* Intento de solucionar relacion uno a uno  Familiar paciente por error foreignkey 
    protected override OnModelCreating (ModelBuilder modelBuilder)
@@ -61,7 +68,7 @@ namespace HospiCasa.App.Persistencia
     {
         if(!optionsBuilder.IsConfigured)
         {
-            optionsBuilder.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog= HospiCasatDataReirth");
+            optionsBuilder.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog= HospiCasatDataReirth7");
 
         }
 

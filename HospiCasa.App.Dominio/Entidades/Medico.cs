@@ -1,10 +1,11 @@
+
 using System;
 
 namespace HospiCasa.App.Dominio
 {
     public class Medico : Persona
     {
-        public int id {get;set;}
+        public int idMedico {get;set;}
 
         public int registroReTHUS {get;set;}
         public string especialidad {get;set;}

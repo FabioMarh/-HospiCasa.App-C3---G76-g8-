@@ -1,4 +1,4 @@
-using System;
+/*using System;
 
 namespace HospiCasa.App.Persistencia 
 {
@@ -38,4 +38,4 @@ namespace HospiCasa.App.Persistencia
 
 
     }
-}
+}*/
